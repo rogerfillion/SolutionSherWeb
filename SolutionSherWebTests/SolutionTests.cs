@@ -1,10 +1,4 @@
 ﻿using Microsoft.VisualStudio.TestTools.UnitTesting;
-using SolutionSherWeb;
-using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 using FluentAssertions;
 
 namespace SolutionSherWeb.Tests
@@ -21,9 +15,7 @@ namespace SolutionSherWeb.Tests
         public void mySolutionTest(int r, int K, params int[] data)
         {
             var o = new Solution();
-
             var result = o.mySolution(data, K);
-
             result.Should().Be(r);
         }
     }

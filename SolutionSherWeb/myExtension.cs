@@ -5,9 +5,8 @@ using System.Linq;
 
 namespace SolutionSherWeb
 {
-    static class myExtension { 
-        
-        
+    static class myExtension
+    {
         public static IEnumerable<IEnumerable<T>> Combinations<T>(this IEnumerable<T> elements, int k)
         {
             var myList = k == 0 ? new[] { new T[0] } : elements.SelectMany((e, i) =>
